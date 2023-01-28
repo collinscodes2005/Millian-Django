@@ -1,0 +1,15 @@
+
+{% load static %}
+<li>
+    <article class="post">
+        <a href="{%  url "post-detail-page" "pukum" %} ">
+            <img src="{% static "images/pic2.png" %}" alt="mountain">
+            <div class="post_content">
+                <h3>{{ all_posts.title }}</h3>
+                <p>
+                   {{all_posts.excerpt}}
+                </p>
+            </div>
+        </a>
+    </article>
+</li>
