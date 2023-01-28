@@ -13,6 +13,8 @@ class Address(models.Model):
     class Meta:
         verbose_name = "Author address entries"
 
+    def __str__(self):
+        return f"{self.street} - - {self.postal_code}"
 class Author(models.Model):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=30)
